@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+body {
+    display: flex;
+    height: 80px;
+    background-color: #0f0c29;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#0f0c29, #6ac2eb);
+    /* Background gradient */
+    background-size: cover;
+}
+
+.globo {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray rgb(107, 200, 243);
+    border-radius: 50%;
+    background-image: url(https://img.freepik.com/fotos-premium/mapa-mundi-com-textura-na-foto-de-satelite-global-visao-da-terra-vista-do-espaco_788189-2352.jpg);
+    /* Direct image URL here */
+    background-size: cover;
+    box-shadow: -25px -25px 25px rgb(48, 92, 117) inset, 10px 10px 30px rgb(104, 170, 199) inset, 0px 0px #0a1118;
+    animation: rotate 35s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+    to {
+        background-position: 100%;
+    }
+}
+
+.titulo h1 {
+    position: fixed;
+    top: 35%;
+    left: 33%;
+    font-size: 144px;
+    color: rgb(176, 206, 223);
+
+}
+
+.titulo h2 {
+    position: fixed;
+    top: 35%;
+    left: 58%;
+    font-size: 144px;
+    color: rgb(176, 206, 223);
+}
+
+.titulo h3 {
+    position: fixed;
+    top: 32%;
+    left: 33%;
+    font-size: 30px;
+    color: rgb(176, 206, 223);
+}
+
+.titulo h4 {
+    position: fixed;
+    top: 60%;
+    left: 62%;
+    font-size: 30px;
+    color: rgb(176, 206, 223);
+}
+
+.linha-horizontal {
+    border-bottom: 1px solid #f3f3f3;
+    /* Aqui você pode definir a espessura, o estilo e a cor da linha */
+    width: 100%;
+    /* ou a largura desejada */
+    position: absolute;
+    top: 50px;
+    /* Ajuste a distância vertical conforme necessário */
+    left: 0;
+    width: 100%;
+}
+
+
+
+nav ul li a {
+    color: #f5f0f0;
+    text-decoration: none;
+    font-weight: 100;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+nav ul li a:hover {
+    background: linear-gradient(#67cce6, #3582ca);
+
+}
+
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 800px;
+}
+
+nav ul li {
+    width: 100%;
+    margin: 50px 0;
+    word-spacing: 15px;
+    display: inline;
+    font-size: 5px;
+
+}
+
+nav ul li a {
+    font-size: 18px;
+    /*tamanho da letra do menu*/
+
+}
+@media screen and (max-width: 800px) {
+    * {
+    
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            vertical-align: middle;
+    
+        }
+        .linha-horizontal {
+            border-bottom: 5px solid #e8e2e2;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 70px;
+        }
+        .tela {
+            position: absolute;
+            width: 170%;
+            padding: 0;
+            margin: 0;
+            height: 325%;
+        }
+        
+    
+        .titulo h1 {
+            position: absolute;
+            left: 60px;
+            top: 90%;
+            font-size: 140px;
+    
+        }
+    
+        .titulo h2 {
+            position: absolute;
+            left: 100%;
+            top: 90%;
+            font-size: 140px;
+        }
+    
+        .titulo h3 {
+            position: absolute;
+            left: 58px;
+            top: 90%;
+            font-size: 30px;
+        }
+    
+        .titulo h4 {
+            position: absolute;
+            left: 140%;
+            top: 110%;
+            font-size: 30px;
+        }
+    
+        .globo {
+            position: absolute;
+            left: 75%;
+            top: 100%;
+    
+        }
+    
+        nav ul li a {
+            color: #f5f0f0;
+            text-decoration: none;
+            font-weight: 100;
+            padding: 8px 15px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            word-spacing: 15px;
+        }
+    
+        nav {
+            position: absolute;
+            left: 75%;
+            top: 0,5%;
+            word-spacing: 15px;
+            font-size: 5px;
+    
+        }
+    
+    
+    
+        nav ul li a {
+            font-size: 30px;
+            /*tamanho da letra do menu*/
+        }
+    
+        nav ul li {
+            width: 100%;
+            margin: 50px 0;
+            word-spacing: 15px;
+            display: inline;
+            font-size: 5px;
+    
+        }
+
+    }

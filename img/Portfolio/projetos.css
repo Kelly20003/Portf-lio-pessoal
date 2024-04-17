@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+body {
+    display: flex;
+    height: 80px;
+    background-color: #0f0c29;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.linha-horizontal {
+    border-bottom: 1px solid #f3f3f3;
+    /* Aqui você pode definir a espessura, o estilo e a cor da linha */
+    width: 100%;
+    /* ou a largura desejada */
+    position: absolute;
+    top: 50px;
+    /* Ajuste a distância vertical conforme necessário */
+    left: 0;
+    width: 100%;
+}
+
+
+
+nav ul li a {
+    color: #f5f0f0;
+    text-decoration: none;
+    font-weight: 100;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+nav ul li a:hover {
+    background: linear-gradient(#67cce6, #3582ca);
+
+}
+
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 800px;
+}
+
+nav ul li {
+    width: 100%;
+    margin: 50px 0;
+    word-spacing: 15px;
+    display: inline;
+    font-size: 5px;
+
+}
+
+nav ul li a {
+    font-size: 18px;
+    /*tamanho da letra do menu*/
+
+}
+
+
+
+.message{
+    width: 235px;
+    animation: digitando 3s steps(29), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    color: #67cce6;
+    position:absolute;
+    top:10%;
+    left:50%;
+    font-size: 40px;
+    transform:translate(-50%,-50%)
+}
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    40%{
+        border-color: rgba(21, 204, 250, 0.2);
+    }
+}
+
+
+.projetos {
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        display:inline-block;
+        flex-direction: column;
+        gap: 64px;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(#0f0c29, #6ac2eb);
+        /* Background gradient */
+
+}
+
+.moldura-container {
+    padding: 0;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    max-width: 200px;
+    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.moldura01 {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px;
+;
+    /* border: 3px solid var(--primary-color); */
+}
+.moldura02 {
+    position: absolute;
+    top: 10px;
+    left: 200%;
+    display: block;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px;
+    /* border: 3px solid var(--primary-color); */
+}
+.moldura03 {
+    position: absolute;
+    top: 10px;
+    left: 350%;
+    display: block;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px;
+    /* border: 3px solid var(--primary-color); */
+}
+.moldura04 {
+    position: absolute;
+    top: 10px;
+    left: 500%;
+    display: block;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px;
+    /* border: 3px solid var(--primary-color); */
+}
+
+
